@@ -2,7 +2,7 @@ pipeline {
     agent  {
         node {
           label 'slave-node' 
-             }
+        }          
     }
     
       stages {
@@ -11,5 +11,5 @@ pipeline {
                 https://github.com/DivineTaminang/tweet-trend-new.git'
             }
         }
-    }
+      }
 } 
