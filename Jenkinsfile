@@ -6,9 +6,9 @@ pipeline {
     }
 
     stages {
-        stage('git-clone') {
+        stage('maven-build') {
             steps {
-                git branch: 'main', url: 'https://github.com/DivineTaminang/tweet-trend-new.git'
+               sh 'mvn clean deploy'
             }            
         }
     }
