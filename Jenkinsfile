@@ -10,7 +10,7 @@ environment {
 }
 
     stages {
-        stage("maven-build") {
+        stage("mavenDEV-build") {
             steps {
                sh 'mvn clean deploy'
             }            
