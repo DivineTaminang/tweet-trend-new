@@ -6,7 +6,7 @@ pipeline {
     }
     
       stages {
-        stage('Git clone') {
+        stage('Git-clone') {
             steps {
                 https://github.com/DivineTaminang/tweet-trend-new.git'
             }
