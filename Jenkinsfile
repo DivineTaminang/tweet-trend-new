@@ -1,5 +1,4 @@
-git add .
-
+pipeline {
     agent {
         node {
             label 'slave-node'
