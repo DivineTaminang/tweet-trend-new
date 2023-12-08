@@ -7,9 +7,9 @@ pipeline {
     
       stages {
         stage('Git-clone') {
-            steps {
+          steps {
                 https://github.com/DivineTaminang/tweet-trend-new.git'
-            }
+          } 
         }
       }
 } 
