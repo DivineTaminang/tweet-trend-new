@@ -8,7 +8,7 @@ pipeline {
       stages {
         stage('Git-clone') {
           steps {
-                https://github.com/DivineTaminang/tweet-trend-new.git'
+                git branch: 'main', url: 'https://github.com/DivineTaminang/tweet-trend-new.git'
           } 
         }
       }
