@@ -12,11 +12,20 @@ environment {
     stages {
         stage("mavenM-build") {
             steps {
+               echo "-------maven build started------"
                sh 'mvn clean deploy'
+                echo "-------maven build ended------"
             }            
         }
-    
 
+        stage('unit test') {
+            steps {
+            echo "-------unit test started------"
+            sh 'mvn surefire-report:report'
+             echo "-------unit test ended------"
+            }
+        }
+    
          stage("SonarQube analysis") {
             environment { 
               scannerHome = tool 'mavine-sonar-scanner'
