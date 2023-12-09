@@ -35,7 +35,7 @@ environment {
               sh "${scannerHome}/bin/sonar-scanner"
             }
             } 
-
+         }
             // No need to occupy a node
          stage("Quality Gate"){
             steps {
