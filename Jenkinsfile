@@ -1,5 +1,5 @@
-def registry = 'https://mavine.jfrog.io/'
-def imageName = 'https://mavine.jfrog.io/mavine-docker-local/ttrend'
+def registry = 'https://mavine.jfrog.io'
+def imageName = 'mavine-docker-local/ttrend'
 def version   = '2.1.2'
 pipeline {
     agent {
