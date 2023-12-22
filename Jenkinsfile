@@ -4,12 +4,12 @@ def version   = '2.1.2'
 pipeline {
     agent {
         node {
-            label 'slave-node'
+            label 'Ansible-server'
     
         }
     } 
 environment {
-    PATH= "/opt/apache-maven-3.9.6/bin:$PATH"
+    PATH= "/home/ubuntu/apache-maven-3.9.6/bin:$PATH"
 }
 
     stages {
