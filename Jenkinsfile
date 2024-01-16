@@ -1,4 +1,4 @@
-def registry = 'https://mavine.jfrog.io'
+def registry = 'https://mavine01.jfrog.io'
 def imageName = 'mavine-docker-local/ttrend'
 def version   = '2.1.2'
 pipeline {
