@@ -83,7 +83,7 @@ environment {
     stage(" Docker Build ") {
       steps {
         script {
-           echo '<--------------- Docker Build Started --------------->'
+           echo '<--------------- Docker Build Started ------------------>'
            app = docker.build(imageName+":"+version)
            echo '<--------------- Docker Build Ends --------------->'
         }
