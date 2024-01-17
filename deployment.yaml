@@ -17,7 +17,7 @@ spec:
 
     spec:
          imagePullSecrets:
-         - name: jfrog_creds
+         - name: jfrogcred
          containers:
            - name: mavine-td
            image: mavine.jfrog.io/mavine-docker-local/ttrend:2.1.2
