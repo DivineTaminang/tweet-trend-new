@@ -101,6 +101,15 @@ environment {
         }
     }
 
+    stage ("Deploy") {
+      steps {
+        echo '<--------------------deploying ------------------------------------->'
+        script {
+          sh './deploy.sh'
+        }
+      }
+    }
+
 
       }
     }   
