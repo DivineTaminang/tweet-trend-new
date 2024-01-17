@@ -17,9 +17,9 @@ spec:
 
     spec:
          imagePullSecrets:
-         - name: jfrogcred
+        - name: jfrogcred
          containers:
-           - name: mavine-td
+         - name: mavine-td
            image: mavine.jfrog.io/mavine-docker-local/ttrend:2.1.2
            imagePullPolicy: Always
            ports:
