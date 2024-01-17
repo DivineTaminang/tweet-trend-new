@@ -96,7 +96,7 @@ environment {
                 docker.withRegistry(registry, 'jfrog_creds'){
                     app.push()
                 }    
-               echo '<----------------- Docker Publish Ended --------------->'  
+               echo '<--------------- Docker Publish Ended --------------->'  
             }
         }
     }
