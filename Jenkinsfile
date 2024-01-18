@@ -107,7 +107,7 @@ environment {
         script {
           sh './deploy.sh'
         }
-         echo '<-------------------deployment is finished------------------------->'
+         echo '<-----------------deployment is finished------------------------->'
       }
     }
        
