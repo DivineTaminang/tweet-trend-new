@@ -101,16 +101,19 @@ environment {
         }
     }
 
-    stage ("Deploy") {
-      steps {
-        echo '<--------------------deploying ------------------------------->'
-        script {
-          sh './deploy.sh'
-        }
-         echo '<-----------------deployment is finished------------------------->'
-      }
-    }
-       
+stage  ("Deploy"){
+steps {
+  script { 
+    echo < ------------Helm deploy started ------------->
+     'sh helm install ttrend ttrend-0.1.0.tgz'
+     echo < -------------Helm deploy ended -------------->
+
+  }
+  
+
+}
+}
+   
 
       }
     }   
