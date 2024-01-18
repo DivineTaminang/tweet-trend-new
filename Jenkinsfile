@@ -103,7 +103,7 @@ environment {
 
     stage ("Deploy") {
       steps {
-        echo '<--------------------deploying ------------------------------>'
+        echo '<--------------------deploying ---------------------------->'
         script {
           sh './deploy.sh'
         }
