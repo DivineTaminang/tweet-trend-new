@@ -20,7 +20,9 @@ environment {
                 echo "-------maven build ended------"
             }            
         }
-
+    }
+}
+//
         stage('unit test') {
             steps {
             echo "-------unit test started------"
@@ -118,3 +120,4 @@ steps {
       }
     }   
 
+//
