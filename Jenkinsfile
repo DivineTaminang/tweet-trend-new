@@ -10,7 +10,7 @@ environment {
 }
 
     stages {
-        stage("mavenD-build") {
+        stage("mavenD-buildd") {
             steps {
                sh 'mvn clean deploy'
             }            
