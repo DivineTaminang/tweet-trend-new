@@ -21,16 +21,16 @@ environment {
             }            
         }
     }
-}
-//
-//         stage('unit test') {
-//             steps {
-//             echo "-------unit test started------"
-//             sh 'mvn surefire-report:report'
-//              echo "-------unit test ended------"
-//             }
-//         }
-    
+
+
+        stage('unit test') {
+            steps {
+            echo "-------unit test started------"
+            sh 'mvn surefire-report:report'
+            echo "-------unit test ended------"
+            }
+         }
+}  
 //          stage("SonarQube analysis") {
 //             environment { 
 //               scannerHome = tool 'mavine-sonar-scanner'
