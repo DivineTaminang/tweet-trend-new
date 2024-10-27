@@ -151,7 +151,7 @@ pipeline {
             }
         }
 
-        stage("SonarQube analysis") {
+        stage("SonarQube analysiss") {
             environment {
                 scannerHome = tool 'mavine-sonar-scanner'
             }
