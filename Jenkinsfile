@@ -208,7 +208,7 @@ pipeline {
             }
         }
 
-        stage("Docker Publish") {
+        stage("Docker Published") {
             steps {
                 script {
                     docker.withRegistry(registry, 'jfrog_creds') {
