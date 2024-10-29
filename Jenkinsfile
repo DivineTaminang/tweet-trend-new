@@ -219,6 +219,16 @@ pipeline {
             }
         }
 
+        stage("Deploy") {
+            steps {
+                script {
+                    echo '< ------------Kubernetes deploy started ----------------->'
+                    sh './deploy.sh'
+                    echo '< -------------Kubernetes deploy ended ------------------->'
+                }
+            }
+        }
+
         // stage("Deploy") {
         //     steps {
         //         script {
