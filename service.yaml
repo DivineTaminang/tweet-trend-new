@@ -3,7 +3,6 @@ kind: Service
 metadata:
   name: mavine-td-service
   namespace: mavine
-
 spec:
   type: NodePort
   selector:

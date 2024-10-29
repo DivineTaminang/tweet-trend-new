@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: mavine-01
+  name: mavine-001
   namespace: mavine
 
 spec:
@@ -14,13 +14,12 @@ spec:
     metadata:
      labels:
        app: mavine-td
-
     spec:
          imagePullSecrets:
          - name: jfrogcred
          containers:
          - name: mavine-td
-           image: mavine01.jfrog.io/mavine-docker-local/ttrend:2.1.2
+           image: mavine001.jfrog.io/mavine-docker-local/ttrend:2.1.2
            imagePullPolicy: Always
            ports:
            - containerPort: 8000
